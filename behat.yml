@@ -9,9 +9,14 @@ default:
 
     extensions:
         Behat\MinkExtension:
+            base_url: http://localhost:8000/
+            browser_name: firefox
             sessions:
                 default:
                     symfony2: ~
+                selenium2:
+                    selenium2: ~
+
         Behat\Symfony2Extension:
             kernel:
                 class: AppKernel
