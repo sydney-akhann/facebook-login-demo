@@ -3,6 +3,7 @@ default:
         account:
             contexts:
                 - Behat\MinkExtension\Context\MinkContext
+                  #- AppBunddle\Behat\DefaultContext
             filters:
                 tags: "@login"
 

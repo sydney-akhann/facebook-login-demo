@@ -4,4 +4,4 @@ Feature: Sign in using facebook
         Given I am on "/login"
         Then the response status code should be 200
         And I should see "Login using facebook"
-        #And the "a" element should have a facebook link
+        And the "a[href^='https://www.facebook.com']" element should contain "Log in with Facebook!"
